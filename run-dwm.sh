@@ -19,7 +19,8 @@ stoken-gui &
 
 while true
 do
-    status=$(date +'%a %b %e %l:%M')
+    battery=$(upower -i $(upower -e | grep BAT) | grep --color=never -E "percentage" | awk '{print $2}')
+    status="$(date +'%a %b %e %l:%M') $battery"
     xsetroot -name "$status"
     sleep 1
 done &

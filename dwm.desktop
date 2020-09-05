@@ -2,6 +2,6 @@
 Encoding=UTF-8
 Name=Dwm
 Comment=Dynamic window manager
-Exec=/home/sbw/hack/dwm/run-dwm.sh
+Exec=/home/sbw/src/dwm/run-dwm.sh
 Icon=dwm
 Type=XSession
